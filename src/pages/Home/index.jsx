@@ -1,3 +1,4 @@
+import Header from "../../components/Header";
 import { Container } from "./style"
 
 function Home() {
@@ -5,8 +6,7 @@ function Home() {
     return (
 
         <Container >
-        <h1>Cosmetic Shop</h1>
-        <p>Sua loja de cosméticos com você onde você for! </p> 
+         <Header />
         </Container>
     )
 }

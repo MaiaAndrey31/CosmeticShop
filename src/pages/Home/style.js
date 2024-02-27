@@ -6,8 +6,6 @@ width: 100%;
 height: 100vh;
 display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
 font-weight: 600;
 color: ${theme.colors.dark};
 `
