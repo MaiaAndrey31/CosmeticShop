@@ -12,7 +12,7 @@ export const Container = styled.header`
   padding: 0rem 3rem;
 
   h1{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: ${theme.colors.white};
   }
   
@@ -42,9 +42,16 @@ gap: 1.5rem;
  font-size: 2.5rem;
  color: ${theme.colors.white};
  align-items: center;
+ div {
+  display: flex;
+  gap: 0.125rem;
+  align-items: center;
+  cursor: pointer;
+ }
 
  p {
   font-size: 1.5rem;
   font-weight: 400;
+  
  }
 `
