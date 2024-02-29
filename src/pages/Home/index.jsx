@@ -1,5 +1,5 @@
 import Header from "../../components/Header";
-import { Container } from "./style"
+import { Container, ContentBanner, Image } from "./style"
 
 function Home() {
 
@@ -7,6 +7,19 @@ function Home() {
 
         <Container >
          <Header />
+         <Image>
+        <ContentBanner >
+          <h4>LANÇAMENTOS</h4>
+          <h2>
+            Metálicos  <span>Brilhe</span> já!
+          </h2>
+          <p>
+            Conheça nossas novas sombras com acabamento brilhante, toque suave e
+            leve com 10 horas de durabilidade
+          </p>
+          <button>Comprar</button>
+        </ContentBanner>
+      </Image>
         </Container>
     )
 }

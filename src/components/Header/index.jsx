@@ -1,5 +1,5 @@
 import { Container, NavLink, Users } from './styles'
-import { IoPersonCircleOutline, IoSearch } from 'react-icons/io5'
+import { IoPersonCircleOutline, IoSearchOutline } from 'react-icons/io5'
 
 function Header() {
   return (
@@ -20,7 +20,7 @@ function Header() {
           <IoPersonCircleOutline />
           <p>Login</p>
         </div>        
-        <IoSearch />
+        <IoSearchOutline />
       </Users>
     </Container>
   )
