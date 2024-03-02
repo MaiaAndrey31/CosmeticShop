@@ -1,3 +1,4 @@
+import Button from "../../components/Button";
 import Header from "../../components/Header";
 import { Container, ContentBanner, Image } from "./style"
 
@@ -17,7 +18,7 @@ function Home() {
             Conheça nossas novas sombras com acabamento brilhante, toque suave e
             leve com 10 horas de durabilidade
           </p>
-          <button>Comprar</button>
+          <Button title="Comprar"/>
         </ContentBanner>
       </Image>
         </Container>

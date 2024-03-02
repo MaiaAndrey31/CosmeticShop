@@ -1,10 +1,10 @@
-import { Container, NavLink, Users } from './styles'
+import { Container, NavLink, Users, SearchIcon } from './styles'
 import { IoPersonCircleOutline, IoSearchOutline } from 'react-icons/io5'
 
 function Header() {
   return (
     <Container>
-      <h1>Beauty Dev</h1>
+      <h1>Beauty <span>Dev</span></h1>
       <NavLink>
         <ul>
           <li>Ver Tudo</li>
@@ -19,8 +19,11 @@ function Header() {
         <div>
           <IoPersonCircleOutline />
           <p>Login</p>
-        </div>        
+        </div> 
+        <SearchIcon>
         <IoSearchOutline />
+          </SearchIcon>       
+        
       </Users>
     </Container>
   )

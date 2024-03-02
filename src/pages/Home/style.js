@@ -19,8 +19,6 @@ background-size: cover;
 
 display: flex;
   padding: 0 50px;
-
-  
 `
 
 export const ContentBanner = styled.div`
@@ -57,20 +55,5 @@ export const ContentBanner = styled.div`
   }
 
 
-  button {
-    background-color: transparent;
-    border: 1px solid ${theme.colors.light};
-    width: 9rem;
-    height: 4rem;
-    color: ${theme.colors.white};
-    font-size: 1.025rem;
-    transition: all 200ms;
-
-    &:hover {
-     
-        background-color: ${theme.colors.secondary};
-        transform: scale(1.1);
-        font-weight: 600;
-    }
-  }
+ 
 `

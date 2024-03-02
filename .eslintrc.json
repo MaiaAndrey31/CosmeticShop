@@ -17,6 +17,7 @@
   "plugins": [
     "react",
     "eslint-plugin-import-helpers",
+    "eslint-plugin-prettier",
     "react-hooks",
     "prettier"
   ],

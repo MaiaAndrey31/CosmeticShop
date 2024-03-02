@@ -14,6 +14,10 @@ export const Container = styled.header`
   h1{
     font-size: 2.5rem;
     color: ${theme.colors.white};
+
+    span {
+      color: ${theme.colors.secondary};
+    }
   }
   
 `
@@ -33,6 +37,13 @@ export const NavLink = styled.div`
     cursor: pointer;
     font-size: 1.5rem;
     
+    &:hover {
+     
+     color: ${theme.colors.secondary};
+     transform: scale(1.05);
+     
+ }
+    
   }
 `
 
@@ -47,6 +58,12 @@ gap: 1.5rem;
   gap: 0.125rem;
   align-items: center;
   cursor: pointer;
+  &:hover {
+     
+     color: ${theme.colors.secondary};
+      transform: scale(1.05);
+      
+  }
  }
 
  p {
@@ -54,4 +71,14 @@ gap: 1.5rem;
   font-weight: 400;
   
  }
+ 
+`
+
+export const SearchIcon = styled.div`
+&:hover {
+     
+     color: ${theme.colors.secondary};
+      transform: scale(1.05);
+      
+  }
 `
