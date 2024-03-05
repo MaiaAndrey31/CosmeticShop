@@ -12,7 +12,7 @@ import {
 import { FiInstagram } from 'react-icons/fi'
 import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa'
 
-function Footer() {
+export function Footer() {
   return (
     <Container>
       <Spacer />
@@ -72,4 +72,3 @@ function Footer() {
   )
 }
 
-export default Footer

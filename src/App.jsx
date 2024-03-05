@@ -1,6 +1,6 @@
 
-import Home from './pages/Home';
-import Footer from './pages/Footer';
+import { Home, Footer } from './pages'
+
 
 import GlobalStyle from './styles/GlobalStyles'
 
@@ -10,9 +10,8 @@ function App() {
 
   return (
     <>
-    
-    <GlobalStyle />
-   <Home />
+      <GlobalStyle />
+      <Home />
       <Footer />
     </>
   )

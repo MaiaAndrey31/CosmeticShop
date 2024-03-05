@@ -1,7 +1,7 @@
 import { Container, NavLink, Users, SearchIcon } from './styles'
 import { IoPersonCircleOutline, IoSearchOutline } from 'react-icons/io5'
 
-function Header() {
+export function Header() {
   return (
     <Container>
       <h1>Beauty <span>Dev</span></h1>
@@ -28,4 +28,4 @@ function Header() {
     </Container>
   )
 }
-export default Header
+

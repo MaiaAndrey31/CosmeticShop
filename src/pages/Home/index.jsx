@@ -1,8 +1,7 @@
-import Button from "../../components/Button";
-import Header from "../../components/Header";
+import { Button, Header } from '../../components'
 import { Container, ContentBanner, Image } from "./style"
 
-function Home() {
+export function Home() {
 
     return (
 
@@ -25,5 +24,3 @@ function Home() {
         </Container>
     )
 }
-
-export default Home
