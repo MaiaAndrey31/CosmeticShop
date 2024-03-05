@@ -19,6 +19,7 @@ function Home() {
             leve com 10 horas de durabilidade
           </p>
           <Button title="Comprar"/>
+         
         </ContentBanner>
       </Image>
         </Container>

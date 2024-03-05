@@ -1,5 +1,7 @@
 
 import Home from './pages/Home';
+import Footer from './pages/Footer';
+
 import GlobalStyle from './styles/GlobalStyles'
 
 
@@ -11,7 +13,7 @@ function App() {
     
     <GlobalStyle />
    <Home />
-      
+      <Footer />
     </>
   )
 }
