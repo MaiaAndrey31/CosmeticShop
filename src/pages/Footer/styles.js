@@ -47,13 +47,12 @@ export const Link = styled.a`
   text-decoration: none;
   color: ${theme.colors.light};
   cursor: pointer;
-  padding-bottom: 1rem;
+  line-height:2.1rem;
 `
 
 export const Text = styled.p`
-  padding-bottom: 0.5rem;
-  font-size: 1.2rem;
-  line-height: 1.4;
+    font-size: 1.2rem;
+  line-height: 2.1rem;
   color: ${theme.colors.light};
 `
 
