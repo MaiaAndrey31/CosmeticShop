@@ -6,9 +6,84 @@ export const Container = styled.div`
   background-color: ${theme.colors.black};
 `
 
-export const Spacer = styled.div`
+export const Subscribe = styled.div`
   width: 100%;
-  height: 10vh;
+  height: 33.438rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: ${theme.colors.white};
+    text-align: center;
+    font-weight: 700;
+  }
+  span {
+    font-weight: 300;
+    font-style: italic;
+    color: ${theme.colors.secondary};
+  }
+
+  h6 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.09rem;
+    margin-top: 1.5rem;
+    color: ${theme.colors.white};
+    text-align: center;
+  }
+`
+export const InputList = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+
+  label {
+    font-size: 1.15rem;
+    color: ${theme.colors.white};
+  }
+
+  div {
+    display: flex;
+    height: 6rem;
+    width: 100%;
+    padding-top: 0.75rem;
+  }
+
+  input {
+    border: 2px solid ${theme.colors.white};
+    height: 4rem;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    min-width: 700px;
+    font-size: 1.5rem;
+    color: ${theme.colors.white};
+    padding-left: 1rem;
+
+    &:focus {
+      border: 2px solid ${theme.colors.secondary};
+      border-right: none;
+    }
+
+    &:focus::placeholder {
+      opacity: 0;
+      
+    }
+
+    &::placeholder {
+      color: ${theme.colors.white};
+     
+    }
+
+    &:hover {
+      border: 2px solid ${theme.colors.secondary};
+      border-right: none;
+    }
+  }
 `
 
 export const Content = styled.div`
@@ -26,15 +101,39 @@ export const Content = styled.div`
   padding-top: 7rem;
 `
 
-export const Collum = styled.div`
+export const Collumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
 
   div {
     padding-bottom: 1.5rem;
   }
+
+  a {
+      &:hover {
+        color: ${theme.colors.secondary};
+      }
+
+      &::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: ${theme.colors.secondary};
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        transition: 0.5s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
 `
+
+
 
 export const Title = styled.h1`
   font-size: 2rem;
@@ -47,11 +146,12 @@ export const Link = styled.a`
   text-decoration: none;
   color: ${theme.colors.light};
   cursor: pointer;
-  line-height:2.1rem;
+  line-height: 2.1rem;
+  position: relative;
 `
 
 export const Text = styled.p`
-    font-size: 1.2rem;
+  font-size: 1.2rem;
   line-height: 2.1rem;
   color: ${theme.colors.light};
 `
@@ -68,7 +168,20 @@ export const TextCopy = styled.p`
 export const Icons = styled.div`
   display: flex;
   gap: 1.5rem;
-  color: ${theme.colors.white};
-  font-size: 1.7rem;
-  cursor: pointer;
+  
+  a {
+    color: ${theme.colors.white};
+    font-size: 1.5rem;
+    position: relative;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: ${theme.colors.secondary};
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+  
 `

@@ -4,28 +4,37 @@ import { IoPersonCircleOutline, IoSearchOutline } from 'react-icons/io5'
 export function Header() {
   return (
     <Container>
-      <h1>Beauty <span>Dev</span></h1>
+      <h1>
+        Beauty <span>Dev</span>
+      </h1>
       <NavLink>
         <ul>
-          <li>Ver Tudo</li>
-          <li>Novidades</li>
-          <li>Mais Vendidos</li>
-          <li>Rosto</li>
-          <li>Lábios</li>
-          <li>Olhos</li>
+          <a>
+            <li>Ver Tudo</li>
+          </a>
+          <a>
+            <li>Novidades</li>
+          </a>
+          <a>
+            <li>Mais Vendidos</li>
+          </a>
+          <a>
+            <li>Lábios</li>
+          </a>
+          <a>
+            <li>Olhos</li>
+          </a>
         </ul>
       </NavLink>
       <Users>
         <div>
           <IoPersonCircleOutline />
           <p>Login</p>
-        </div> 
+        </div>
         <SearchIcon>
-        <IoSearchOutline />
-          </SearchIcon>       
-        
+          <IoSearchOutline />
+        </SearchIcon>
       </Users>
     </Container>
   )
 }
-

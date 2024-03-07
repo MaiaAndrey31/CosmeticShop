@@ -29,21 +29,38 @@ export const NavLink = styled.div`
   ul {
     list-style: none;
     display: flex;
-    gap: 1.25rem;
+    gap: 4rem;
   }
+  
 
   li {
     color: ${theme.colors.white};
     cursor: pointer;
-    font-size: 1.5rem;
-    
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    letter-spacing: 0.03rem;
+    padding: 0 1rem;
+
     &:hover {
-     
-     color: ${theme.colors.secondary};
-     transform: scale(1.05);
-     
- }
-    
+      color: ${theme.colors.secondary};
+    }
+
+    &::after {
+      content: '';
+      width: 0%;
+      height: 2px;
+      background-color: ${theme.colors.secondary};
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      transition: 0.5s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
 `
 
